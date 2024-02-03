@@ -73,8 +73,15 @@ hi          bye
 <h3>15.Image Tags</h3>
 <!--use relative path -->
 <img src="assets/html.png" title="html" alt="html logo" >
+<!--image with width -->
+<img src="assets/html.png" title="html" alt="html logo" width="100" >
 
-
+<!--Picture tag-->
+<picture>
+    <source media="(min-width: 1000px)" srcset="assets/large.jpg">
+    <source media="(min-width: 800px)" srcset="assets/medium2.jpg">
+    <img src="assets/small.jpg" title="phone" alt="phone">
+</picture>
 
 </body>
 </html>
