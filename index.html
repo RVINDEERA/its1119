@@ -77,14 +77,14 @@ hi          bye
 <img src="assets/images/html.png" title="html" alt="html logo" width="100" >
 
 <!--Picture tag-->
-<h3>16.Image Tags</h3>
+<h3>16.Picture Tags</h3>
 <picture>
     <source media="(min-width: 1000px)" srcset="assets/images/large.jpg">
     <source media="(min-width: 800px)" srcset="assets/images/medium2.jpg">
     <img src="assets/images/small.jpg" title="phone" alt="phone">
 </picture>
 <!--Video tag -->
-<h3>17.Video Tags</h3>
+<h3>17.Video Tag use track tag also</h3>
 <video controls
        autoplay
        loop
@@ -92,8 +92,10 @@ hi          bye
        poster="assets/images/videophoto.jpg"
        width="700px"
        height="400px">
-    <source src="assets/videos/car.mp4x" type="video/mp4">
-    <source src="assets/videos/car.webm3" type="video/webm">
+    <source src="assets/videos/car.mp4" type="video/mp4">
+    <source src="assets/videos/car.webm" type="video/webm">
+    <track src="assets/sub/sample.vtt" label="English" kind="subtitles" srclang="en" default>
+    <track src="assets/sub/arabic.vtt" label="Arabic" kind="subtitles" srclang="ar">
 </video>
 
 </body>
