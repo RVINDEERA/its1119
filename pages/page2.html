@@ -83,7 +83,7 @@
 <form >
 <!--input text-->
     <input type="text" placeholder="Enter name">
-    <br>    
+    <br><br>
 <!--color picker-->
     <input type="color" value="#10e650">
     <br><br>
@@ -99,6 +99,58 @@
     <input type="radio">
     <input type="radio">
     <input type="radio" checked>
+    <br><br>
+<!--date picker-->
+    <input type="date">
+    <input type="date" value="2024-02-10">
+    <input type="date" value="2024-02-01" min="2024-02-01" max="2024-02-10" >
+    <br><br>
+<!--week picker-->
+    <input type="week">
+    <input type="week" value="2024-W04">
+    <br><br>
+<!--month picker-->
+    <input type="month" placeholder="Month">
+    <input type="month" value="2014-02">
+    <br><br>
+<!--time picker-->
+    <input type="time">
+    <input type="time" value="10:00">
+    <br><br>
+<!--date time picker together-->
+    <input type="datetime-local">
+<!--add date and time value -->
+    <input type="datetime-local" value="2024-02-12T08:32">
+    <br><br>
+<!--email-->
+    <input type="email" placeholder="Enter your email">
+    <br><br>
+<!--file input-->
+    <input type="file">
+    <br><br>
+<!--url-->
+    <input type="url" placeholder="Enter website url">
+    <input type="url" value="https://ijse.lk" placeholder="Enter website url">
+    <br><br>
+<!--telephone number-->
+    <input type="tel"placeholder="+94 xxxxxxxxx">
+<!--with regex pattern-->
+    <input type="tel"placeholder="+94 xxxxxxxx" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+    <br><br>
+<!--Password field with dotted-->
+    <input type="password" placeholder="Password">
+    <br><br>
+<!--number (amount / count)-->
+    <input type="number">
+    <input type="number" value="14">
+    <br><br>
+<!--range picker (price range chooser)-->
+    <input type="range" >
+    <input type="range" value="100">
+    <input type="range" value="80">
+    <br><br>
+<!--search-->
+    <input type="search" placeholder="Search Here">
 </form>
 
 </body>
