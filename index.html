@@ -428,6 +428,225 @@ hi          bye
 <hr>
 <hr color="red3610">
 
+<!--form-->
+<h3>Forms</h3>
+<form >
+    <!--input text-->
+    <input type="text" placeholder="Enter name">
+    <br><br>
+    <!--color picker-->
+    <input type="color" value="#10e650">
+    <br><br>
+    <!--button-->
+    <input type="button" value="click">
+    <br><br>
+    <!--check box-->
+    <input type="checkbox" >
+    <!--check box with default checked-->
+    <input type="checkbox" checked>
+    <br><br>
+    <!--radio button -->
+    <input type="radio">
+    <input type="radio">
+    <input type="radio" checked>
+    <br><br>
+    <!--date picker-->
+    <input type="date">
+    <input type="date" value="2024-02-10">
+    <input type="date" value="2024-02-01" min="2024-02-01" max="2024-02-10" >
+    <br><br>
+    <!--week picker-->
+    <input type="week">
+    <input type="week" value="2024-W04">
+    <br><br>
+    <!--month picker-->
+    <input type="month" placeholder="Month">
+    <input type="month" value="2014-02">
+    <br><br>
+    <!--time picker-->
+    <input type="time">
+    <input type="time" value="10:00">
+    <br><br>
+    <!--date time picker together-->
+    <input type="datetime-local">
+    <!--add date and time value -->
+    <input type="datetime-local" value="2024-02-12T08:32">
+    <br><br>
+    <!--email-->
+    <input type="email" placeholder="Enter your email">
+    <br><br>
+    <!--url-->
+    <input type="url" placeholder="Enter website url">
+    <input type="url" value="https://ijse.lk" placeholder="Enter website url">
+    <br><br>
+    <!--telephone number-->
+    <input type="tel"placeholder="+94 xxxxxxxxx">
+    <!--with regex pattern-->
+    <input type="tel"placeholder="+94 xxxxxxxx" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+    <br><br>
+    <!--Password field with dotted-->
+    <input type="password" placeholder="Password">
+    <br><br>
+    <!--number (amount / count)-->
+    <input type="number">
+    <input type="number" value="14">
+    <br><br>
+    <!--range picker (price range chooser)-->
+    <input type="range" >
+    <input type="range" value="100">
+    <input type="range" value="80">
+    <br><br>
+    <!--search-->
+    <input type="search" placeholder="Search Here">
+    <br><br>
+    <!--show image-->
+    <input type="image" src="../assets/images/small.jpg">
+    <br><br>
+    <!--file chooser-->
+    <input type="file">
+    <br><br>
+    <!--hidden-->
+    <input type="hidden" value="abc">
+    <br><br>
+    <!--button-->
+    <input type="button" value="Click">
+    <!--submit button-->
+    <input type="submit" value="Submit">
+    <br><br>
+    <!--reset (to reset from included form tag)-->
+    <input type="reset" value="Reset">
+
+</form>
+<br><br><br><br>
+<form>
+    <!--form with label-->
+    <div>
+        <label for="name">Username</label><br>
+        <input type="text" id="name" placeholder="Enter your Name">
+        <br>
+        <label for="pwd">Password</label><br>
+        <input type="password" id="pwd" placeholder="Enter your Password">
+    </div>
+    <div>
+        <!--text area-->
+        <label for="msg">Message</label> <br>
+        <textarea
+                id="msg"
+                placeholder="Enter Your Message"
+                rows="10"
+                cols="20"
+        ></textarea>
+    </div>
+    <div>
+        <br>
+        <!--select tag lick drop down menu-->
+        <label for="language">Select your Programming language</label>
+        <br>
+        <select id="language">
+            <!--add value to option it is important-->
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="c">C</option>
+            <option value="c#">C#</option>
+            <option value="ruby">Ruby</option>
+        </select>
+    </div>
+    <div>
+        <br>
+        <!--select tag lick drop down menu with group inside on list
+        option group-->
+        <label for="language1">Select your Technologies</label>
+        <br>
+        <select id="language1">
+            <optgroup label="Languages">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="c">C</option>
+                <option value="c#">C#</option>
+                <option value="ruby">Ruby</option>
+            </optgroup>
+            <optgroup label="Frontend technologies">
+                <option value="react">React</option>
+                <option value="nextjs">NextJS</option>
+                <option value="angular">Angular</option>
+                <option value="vuejs">VueJS</option>
+            </optgroup>
+            <optgroup label="Backend technologies">
+                <option value="spring-boot">Spring Boot</option>
+                <option value="expressjs">ExpressJs</option>
+            </optgroup>
+        </select>
+        <br>
+    </div>
+
+    <div>
+        <!--list with suggestion-->
+        <br>
+        <label for="countrysearch">Select your Country</label><br>
+        <input id="countrysearch" text placeholder="Enter Your Country" list="countries">
+        <datalist id="countries">
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="USA">USA</option>
+            <option value="UAE">UAE</option>
+            <option value="Canada">Canada</option>
+            <option value="India">India</option>
+        </datalist>
+    </div>
+    <br><br>
+    <fieldset >
+        <legend>Select your gender</legend>
+        <input id="male" type="radio" name="gender"><label for="male">Male</label><br>
+        <input id="female" type="radio" name="gender"><label for="female">Female</label>
+    </fieldset>
+    <br><br>
+    <!--normal button-->
+    <input type="button" value="Click">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <br><br>
+
+    <!--using button tag-->
+    <button type="button">Click</button>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+<br><br>
+<!--output tag -->
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" name="a" value="10">
+    +
+    <input type="number" id="b" name="b" value="20">
+    =
+    <output name="result">30</output>
+
+</form>
+<!--Special characters-->
+<p>
+<!--&nbsp-->
+    Hello&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam animi dicta dignissimos
+</p>
+<p>
+<!--&lt &gt-->
+    X&lt;Y <br>
+    X&gt;Y
+</p>
+<!--7 Simbol-->
+<p>
+    Tom&amp;Jerrry
+</p>
+<!--quote ""-->
+<p>
+    &quot;Welcome&quot;
+</p>
+<!--copyright mark-->
+<p>
+    &copy;ABC Tech(pvt.)Ltd.
+</p>
+<!--trademark simbol-->
+<p>
+    CNN&trade;
+</p>
 
 
 
